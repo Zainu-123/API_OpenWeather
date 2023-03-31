@@ -4,7 +4,9 @@ import requests
 
 """Assigning the API Key of the user to a variable"""
 
-api_key="0735473732fdffeebaca66536f22d997"
+
+with open('api_key.txt', 'r') as f:
+    api_key = f.read().strip()
 
 """Defining a function to retrieve weather information"""
 
